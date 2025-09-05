@@ -16,12 +16,14 @@
             --border-radius: 8px;
             --box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+        
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
         }
+        
         body {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             color: var(--text-color);
@@ -29,6 +31,7 @@
             min-height: 100vh;
             padding: 20px;
         }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -37,25 +40,30 @@
             box-shadow: var(--box-shadow);
             overflow: hidden;
         }
+        
         header {
             text-align: center;
             padding: 30px;
             background: linear-gradient(135deg, var(--primary-color) 0%, #b71c1c 100%);
             color: var(--light-color);
         }
+        
         h1 {
             margin-bottom: 10px;
             font-size: 2.2rem;
         }
+        
         .subtitle {
             font-size: 1.1rem;
             opacity: 0.9;
         }
+        
         .tabs {
             display: flex;
             background: #e9ecef;
             border-bottom: 2px solid #ddd;
         }
+        
         .tab {
             padding: 15px 25px;
             cursor: pointer;
@@ -64,30 +72,37 @@
             transition: all 0.3s;
             border-bottom: 3px solid transparent;
         }
+        
         .tab.active {
             background: var(--light-color);
             color: var(--primary-color);
             border-bottom: 3px solid var(--primary-color);
         }
+        
         .tab:hover {
             background: #dde1e6;
         }
+        
         .tab-content {
             display: none;
             padding: 30px;
         }
+        
         .tab-content.active {
             display: block;
             animation: fadeIn 0.5s;
         }
+        
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
+        
         .qr-container {
             text-align: center;
             margin-bottom: 20px;
         }
+        
         #qrcode {
             display: inline-block;
             background: var(--light-color);
@@ -96,6 +111,7 @@
             box-shadow: var(--box-shadow);
             margin: 20px 0;
         }
+        
         .instructions {
             background: #e8f4f8;
             padding: 20px;
@@ -103,28 +119,34 @@
             margin: 20px 0;
             border-left: 4px solid #4fc3f7;
         }
+        
         .instructions h3 {
             color: #0288d1;
             margin-bottom: 10px;
         }
+        
         .instructions ol {
             margin-left: 20px;
         }
+        
         .instructions li {
             margin-bottom: 8px;
         }
+        
         .form-section {
             margin-bottom: 30px;
             padding: 20px;
             background: #f8f9fa;
             border-radius: var(--border-radius);
         }
+        
         .form-section h3 {
             margin-bottom: 15px;
             padding-bottom: 10px;
             border-bottom: 2px solid var(--primary-color);
             color: var(--primary-color);
         }
+        
         .question {
             margin-bottom: 20px;
             padding: 15px;
@@ -132,17 +154,20 @@
             border-radius: var(--border-radius);
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
+        
         .question-title {
             font-weight: bold;
             margin-bottom: 12px;
             color: #444;
         }
+        
         .options {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-bottom: 10px;
         }
+        
         .option {
             background: #f1f3f5;
             padding: 12px 18px;
@@ -151,16 +176,19 @@
             transition: all 0.3s;
             border: 2px solid transparent;
         }
+        
         .option:hover {
             background: #e9ecef;
             transform: translateY(-2px);
         }
+        
         .option.selected {
             background: var(--primary-color);
             color: var(--light-color);
             border-color: var(--primary-color);
             box-shadow: 0 4px 8px rgba(211, 47, 47, 0.3);
         }
+        
         .checkbox-option {
             display: flex;
             align-items: center;
@@ -169,6 +197,7 @@
             background: #f8f9fa;
             border-radius: 4px;
         }
+        
         input[type="text"], input[type="email"], input[type="tel"] {
             padding: 12px;
             border: 1px solid #ddd;
@@ -177,11 +206,13 @@
             margin-top: 5px;
             transition: border 0.3s;
         }
+        
         input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
             border-color: var(--primary-color);
             outline: none;
             box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
         }
+        
         textarea {
             width: 100%;
             padding: 12px;
@@ -191,15 +222,18 @@
             resize: vertical;
             transition: border 0.3s;
         }
+        
         textarea:focus {
             border-color: var(--primary-color);
             outline: none;
             box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
         }
+        
         .sortable-list {
             list-style: none;
             margin: 15px 0;
         }
+        
         .sortable-list li {
             background: #f1f3f5;
             padding: 12px 15px;
@@ -210,15 +244,18 @@
             display: flex;
             align-items: center;
         }
+        
         .sortable-list li:before {
             content: "≡";
             margin-right: 10px;
             font-size: 1.2rem;
             color: #6c757d;
         }
+        
         .sortable-list li:hover {
             background: #e9ecef;
         }
+        
         .btn {
             background: var(--primary-color);
             color: var(--light-color);
@@ -233,40 +270,48 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(211, 47, 47, 0.2);
         }
+        
         .btn:hover {
             background: #b71c1c;
             transform: translateY(-2px);
             box-shadow: 0 6px 10px rgba(211, 47, 47, 0.3);
         }
+        
         .btn:active {
             transform: translateY(0);
         }
+        
         .btn-container {
             text-align: center;
             margin-top: 30px;
         }
+        
         .stats-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
+        
         .chart-container {
             background: var(--light-color);
             padding: 20px;
             border-radius: var(--border-radius);
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        
         .thank-you {
             text-align: center;
             padding: 50px 20px;
             background: var(--light-color);
             border-radius: var(--border-radius);
         }
+        
         .thank-you h2 {
             color: var(--primary-color);
             margin-bottom: 20px;
         }
+        
         .thank-you p {
             font-size: 1.1rem;
             margin-bottom: 15px;
@@ -274,6 +319,7 @@
             margin-left: auto;
             margin-right: auto;
         }
+        
         .save-instructions {
             background: #e8f5e9;
             padding: 20px;
@@ -281,10 +327,25 @@
             margin: 30px 0;
             border-left: 4px solid #4caf50;
         }
+        
         .save-instructions h3 {
             color: #2e7d32;
             margin-bottom: 15px;
         }
+        
+        .upload-option {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .upload-option h3 {
+            color: #1565c0;
+            margin-bottom: 15px;
+        }
+        
         footer {
             text-align: center;
             padding: 20px;
@@ -293,22 +354,28 @@
             font-size: 0.9rem;
             border-top: 1px solid #e9ecef;
         }
+        
         @media (max-width: 768px) {
             .tabs {
                 flex-direction: column;
             }
+            
             .tab {
                 padding: 12px;
             }
+            
             .options {
                 flex-direction: column;
             }
+            
             .option {
                 width: 100%;
             }
+            
             .stats-container {
                 grid-template-columns: 1fr;
             }
+            
             .tab-content {
                 padding: 15px;
             }
@@ -321,19 +388,36 @@
             <h1>熟食店顾客问卷调查系统</h1>
             <p class="subtitle">收集顾客反馈，提升服务质量</p>
         </header>
+        
         <div class="tabs">
             <div class="tab active" data-tab="qrcode">二维码生成</div>
             <div class="tab" data-tab="survey">问卷调查</div>
             <div class="tab" data-tab="results">商家统计</div>
             <div class="tab" data-tab="instructions">使用说明</div>
         </div>
+        
         <div class="tab-content active" id="qrcode-tab">
             <div class="qr-container">
                 <h2>顾客问卷调查二维码</h2>
                 <p>请让顾客扫描以下二维码填写问卷</p>
                 <div id="qrcode"></div>
                 <p>扫描后可直接跳转到问卷调查页面</p>
+                <p class="note">注意：微信扫描本地文件可能无法直接打开，请参考下方解决方案</p>
             </div>
+            
+            <div class="upload-option">
+                <h3>微信扫描解决方案</h3>
+                <p>由于微信安全限制，扫描本地文件的二维码可能无法直接打开。解决方案：</p>
+                <ol>
+                    <li>将本文件上传到网络服务器（如GitHub Pages、Netlify等免费服务）</li>
+                    <li>或使用Python在本地启动服务器：
+                        <pre>python -m http.server 8000</pre>
+                        然后访问 http://localhost:8000 获取可扫描的URL
+                    </li>
+                    <li>或使用手机扫描时，确保手机和电脑在同一网络，并使用电脑的IP地址访问</li>
+                </ol>
+            </div>
+            
             <div class="save-instructions">
                 <h3>如何保存此问卷调查系统</h3>
                 <ol>
@@ -347,10 +431,12 @@
                 <p>保存后，双击该HTML文件即可在浏览器中运行此问卷调查系统。</p>
             </div>
         </div>
+        
         <div class="tab-content" id="survey-tab">
             <form id="survey-form">
                 <div class="form-section">
                     <h3>一、基本信息</h3>
+                    
                     <div class="question">
                         <div class="question-title">您的性别：</div>
                         <div class="options">
@@ -358,6 +444,7 @@
                             <div class="option" data-value="女">女</div>
                         </div>
                     </div>
+                    
                     <div class="question">
                         <div class="question-title">您的年龄段：</div>
                         <div class="options">
@@ -368,6 +455,7 @@
                             <div class="option" data-value="51岁以上">51岁以上</div>
                         </div>
                     </div>
+                    
                     <div class="question">
                         <div class="question-title">您的职业：</div>
                         <div class="options">
@@ -379,6 +467,7 @@
                         </div>
                         <input type="text" id="occupation-other" placeholder="请注明其他职业" style="display: none; margin-top: 10px;">
                     </div>
+                    
                     <div class="question">
                         <div class="question-title">您平均每月在食品上的个人支出约为：</div>
                         <div class="options">
@@ -390,8 +479,10 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="form-section">
                     <h3>二、消费习惯与偏好</h3>
+                    
                     <div class="question">
                         <div class="question-title">您购买熟食的频率是？</div>
                         <div class="options">
@@ -402,6 +493,7 @@
                             <div class="option" data-value="很少购买">很少购买</div>
                         </div>
                     </div>
+                    
                     <div class="question">
                         <div class="question-title">您通常在哪里购买熟食？（可多选）</div>
                         <div class="checkbox-option"><input type="checkbox" name="purchase-place" value="超市"> 超市</div>
@@ -410,6 +502,7 @@
                         <div class="checkbox-option"><input type="checkbox" name="purchase-place" value="线上平台"> 线上平台（外卖APP等）</div>
                         <div class="checkbox-option"><input type="checkbox" name="purchase-place" value="其他"> 其他 <input type="text" id="purchase-place-other" placeholder="请注明"></div>
                     </div>
+                    
                     <div class="question">
                         <div class="question-title">您购买熟食的主要目的是？</div>
                         <div class="options">
@@ -421,6 +514,7 @@
                         </div>
                         <input type="text" id="purpose-other" placeholder="请注明其他目的" style="display: none; margin-top: 10px;">
                     </div>
+                    
                     <div class="question">
                         <div class="question-title">您每次在熟食上的平均消费金额大约是？</div>
                         <div class="options">
@@ -430,6 +524,7 @@
                             <div class="option" data-value="100元以上">100元以上</div>
                         </div>
                     </div>
+                    
                     <div class="question">
                         <div class="question-title">您通常偏好哪种类型的熟食？（可多选）</div>
                         <div class="checkbox-option"><input type="checkbox" name="preferred-type" value="家禽类"> 家禽类（鸡、鸭、鹅等）</div>
@@ -439,10 +534,12 @@
                         <div class="checkbox-option"><input type="checkbox" name="preferred-type" value="其他"> 其他 <input type="text" id="preferred-type-other" placeholder="请注明"></div>
                     </div>
                 </div>
+                
                 <div class="form-section">
-                    <h3>三、口味偏好</h3>
+                    <h3>三、口味偏好（这是精准归类的核心部分）</h3>
+                    
                     <div class="question">
-                        <div class="question-title">以下口味，您更偏爱哪一种或哪几种？（可多选）</div>
+                        <div class="question-title">以下口味，您更偏爱哪一种或哪几种？（可多选，并在所选口味中按喜好程度排序，1为最喜欢）</div>
                         <div class="checkbox-option"><input type="checkbox" name="flavor" value="麻辣"> 麻辣（强调花椒的麻与辣椒的辣）</div>
                         <div class="checkbox-option"><input type="checkbox" name="flavor" value="香辣"> 香辣（强调辣椒和香料的香气，辣度适中）</div>
                         <div class="checkbox-option"><input type="checkbox" name="flavor" value="五香/卤香"> 五香/卤香（浓郁的传统卤制香气，咸香可口）</div>
@@ -452,6 +549,13 @@
                         <div class="checkbox-option"><input type="checkbox" name="flavor" value="甜咸"> 甜咸（略带甜味的卤制口感）</div>
                         <div class="checkbox-option"><input type="checkbox" name="flavor" value="其他"> 其他 <input type="text" id="flavor-other" placeholder="请注明"></div>
                     </div>
+                    
+                    <div class="question">
+                        <div class="question-title">请将您上面选择的口味按喜好程度从高到低排序：</div>
+                        <p>请拖动排序（最上面为最喜欢）</p>
+                        <ul id="flavor-sortable" class="sortable-list"></ul>
+                    </div>
+                    
                     <div class="question">
                         <div class="question-title">您能接受的辣度级别是？</div>
                         <div class="options">
@@ -461,6 +565,7 @@
                             <div class="option" data-value="特辣">特辣</div>
                         </div>
                     </div>
+                    
                     <div class="question">
                         <div class="question-title">您对熟食的咸度偏好是？</div>
                         <div class="options">
@@ -469,9 +574,23 @@
                             <div class="option" data-value="偏好咸香">偏好咸香（口味较重）</div>
                         </div>
                     </div>
+                    
+                    <div class="question">
+                        <div class="question-title">除了口味，您购买熟食时最看重的因素是？（请选择最重要的1-3项并按重要性排序）</div>
+                        <div class="checkbox-option"><input type="checkbox" name="factor" value="卫生安全"> 卫生安全（看起来干净、放心）</div>
+                        <div class="checkbox-option"><input type="checkbox" name="factor" value="产品质量/新鲜度"> 产品质量/新鲜度</div>
+                        <div class="checkbox-option"><input type="checkbox" name="factor" value="价格"> 价格</div>
+                        <div class="checkbox-option"><input type="checkbox" name="factor" value="品牌知名度"> 品牌知名度</div>
+                        <div class="checkbox-option"><input type="checkbox" name="factor" value="购买便利性"> 购买便利性（距离近、容易买到）</div>
+                        <div class="checkbox-option"><input type="checkbox" name="factor" value="包装"> 包装（适合携带、送礼或保存）</div>
+                        <p style="margin-top: 10px;">请拖动排序（最上面为最重要）</p>
+                        <ul id="factor-sortable" class="sortable-list"></ul>
+                    </div>
                 </div>
+                
                 <div class="form-section">
                     <h3>四、改进建议与未来期望</h3>
+                    
                     <div class="question">
                         <div class="question-title">您认为一家理想的熟食店最重要的特质是什么？（可多选）</div>
                         <div class="checkbox-option"><input type="checkbox" name="trait" value="产品口味独特且稳定"> 产品口味独特且稳定</div>
@@ -482,8 +601,18 @@
                         <div class="checkbox-option"><input type="checkbox" name="trait" value="创新速度快"> 创新速度快，经常推出新品</div>
                         <div class="checkbox-option"><input type="checkbox" name="trait" value="其他"> 其他 <input type="text" id="trait-other" placeholder="请注明"></div>
                     </div>
+                    
                     <div class="question">
-                        <div class="question-title">您是否愿意参加后续的深度访谈或新品试吃活动？</div>
+                        <div class="question-title">您希望熟食店在哪些方面进行改进或提升？（可多选）</div>
+                        <div class="checkbox-option"><input type="checkbox" name="improvement" value="产品方面"> 产品方面：丰富品种、稳定口味、降低辣度/咸度、提供更健康的选项（低脂低糖）</div>
+                        <div class="checkbox-option"><input type="checkbox" name="improvement" value="服务方面"> 服务方面：提高效率减少等待、开通外卖、提供试吃、更友好的店员</div>
+                        <div class="checkbox-option"><input type="checkbox" name="improvement" value="环境方面"> 环境方面：改善店面卫生状况、优化产品陈列看起来更有食欲</div>
+                        <div class="checkbox-option"><input type="checkbox" name="improvement" value="营销方面"> 营销方面：推出会员折扣、拼单优惠、发放优惠券、组织线下品尝活动</div>
+                        <div class="checkbox-option"><input type="checkbox" name="improvement" value="其他"> 其他 <input type="text" id="improvement-other" placeholder="请注明"></div>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="question-title">您是否愿意参加后续的深度访谈或新品试吃活动？如果愿意，请留下您的联系方式（选填）。</div>
                         <div class="options">
                             <div class="option" data-value="愿意">愿意</div>
                             <div class="option" data-value="暂时不愿意">暂时不愿意</div>
@@ -491,14 +620,36 @@
                         <input type="text" id="contact-info" placeholder="请留下您的联系方式（电话/微信）" style="display: none; margin-top: 10px;">
                     </div>
                 </div>
+                
+                <div class="form-section">
+                    <h3>五、开放性问题（畅所欲言）</h3>
+                    
+                    <div class="question">
+                        <div class="question-title">您最喜欢的一款熟食产品是什么？它最吸引您的地方在哪？</div>
+                        <textarea id="favorite-product"></textarea>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="question-title">请描述一次您印象最深刻（无论是特别好还是特别差）的熟食消费经历。</div>
+                        <textarea id="memorable-experience"></textarea>
+                    </div>
+                    
+                    <div class="question">
+                        <div class="question-title">如果您是店主，您最想推出的一款创新熟食产品会是什么？（描述一下它的口味、特点）</div>
+                        <textarea id="innovative-product"></textarea>
+                    </div>
+                </div>
+                
                 <div class="btn-container">
                     <button type="submit" class="btn">提交问卷</button>
                 </div>
             </form>
         </div>
+        
         <div class="tab-content" id="results-tab">
             <h2>问卷调查结果统计</h2>
             <p>以下是根据收集到的问卷数据生成的统计图表</p>
+            
             <div class="stats-container">
                 <div class="chart-container">
                     <canvas id="gender-chart"></canvas>
@@ -513,7 +664,11 @@
                     <canvas id="spicy-level-chart"></canvas>
                 </div>
             </div>
+            
+            <h3 style="margin-top: 30px;">详细数据</h3>
+            <div id="data-table"></div>
         </div>
+        
         <div class="tab-content" id="instructions-tab">
             <div class="instructions">
                 <h3>如何使用此问卷调查系统</h3>
@@ -526,6 +681,20 @@
                     <li>使用"商家统计"选项卡查看收集到的数据和分析</li>
                 </ol>
             </div>
+            
+            <div class="instructions">
+                <h3>微信扫描解决方案</h3>
+                <p>由于微信安全限制，扫描本地文件的二维码可能无法直接打开。解决方案：</p>
+                <ol>
+                    <li>将本文件上传到网络服务器（如GitHub Pages、Netlify等免费服务）</li>
+                    <li>或使用Python在本地启动服务器：
+                        <pre>python -m http.server 8000</pre>
+                        然后访问 http://localhost:8000 获取可扫描的URL
+                    </li>
+                    <li>或使用手机扫描时，确保手机和电脑在同一网络，并使用电脑的IP地址访问</li>
+                </ol>
+            </div>
+            
             <div class="instructions">
                 <h3>系统功能特点</h3>
                 <ul>
@@ -537,38 +706,51 @@
                 </ul>
             </div>
         </div>
+        
         <footer>
             <p>© 2023 熟食店顾客问卷调查系统 | 设计用于收集和分析顾客反馈</p>
         </footer>
     </div>
+
     <script>
         // 初始化二维码和页面功能
         document.addEventListener('DOMContentLoaded', function() {
             // 生成二维码 - 修复二维码生成问题
             generateQRCode();
+            
             // 选项卡切换
             const tabs = document.querySelectorAll('.tab');
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     const tabName = tab.getAttribute('data-tab');
+                    
                     // 更新活动选项卡
                     tabs.forEach(t => t.classList.remove('active'));
                     tab.classList.add('active');
+                    
                     // 显示对应内容
                     document.querySelectorAll('.tab-content').forEach(content => {
                         content.classList.remove('active');
                     });
                     document.getElementById(`${tabName}-tab`).classList.add('active');
+                    
                     // 如果切换到统计页面，加载结果
                     if (tabName === 'results') {
                         loadResults();
                     }
+                    
+                    // 如果切换到二维码页面，重新生成二维码（解决可能的加载问题）
+                    if (tabName === 'qrcode') {
+                        setTimeout(generateQRCode, 100);
+                    }
                 });
             });
+            
             // 选项选择
             document.addEventListener('click', function(e) {
                 if (e.target.classList.contains('option')) {
                     const parent = e.target.parentElement;
+                    
                     // 处理单选按钮组
                     if (parent.classList.contains('options')) {
                         parent.querySelectorAll('.option').forEach(opt => {
@@ -576,6 +758,7 @@
                         });
                         e.target.classList.add('selected');
                     }
+                    
                     // 显示/隐藏其他输入框
                     if (e.target.getAttribute('data-value') === '其他') {
                         const otherInput = e.target.parentElement.nextElementSibling;
@@ -588,6 +771,7 @@
                             otherInput.style.display = 'none';
                         }
                     }
+                    
                     // 特别处理联系方式输入框
                     if (e.target.getAttribute('data-value') === '愿意') {
                         document.getElementById('contact-info').style.display = 'block';
@@ -596,63 +780,178 @@
                     }
                 }
             });
+            
+            // 多选选项改变时更新排序列表
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    if (this.name === 'flavor' && this.checked) {
+                        updateSortableList('flavor-sortable', this.value);
+                    } else if (this.name === 'factor' && this.checked) {
+                        updateSortableList('factor-sortable', this.value);
+                    } else if ((this.name === 'flavor' || this.name === 'factor') && !this.checked) {
+                        removeFromSortableList(this.name === 'flavor' ? 'flavor-sortable' : 'factor-sortable', this.value);
+                    }
+                });
+            });
+            
             // 表单提交
             document.getElementById('survey-form').addEventListener('submit', function(e) {
                 e.preventDefault();
-                saveSurveyData();
-                // 显示感谢信息
-                document.querySelectorAll('.tab-content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                const thankyou = document.createElement('div');
-                thankyou.className = 'thank-you';
-                thankyou.innerHTML = `
-                    <h2>感谢您参与本次问卷调查！</h2>
-                    <p>您的反馈对我们非常重要，我们将根据您的建议不断提升产品和服务质量。</p>
-                    <p>期待再次为您服务！</p>
-                    <div class="btn-container">
-                        <div class="btn" id="back-to-qrcode">返回首页</div>
-                    </div>
-                `;
-                const surveyTab = document.getElementById('survey-tab');
-                surveyTab.innerHTML = '';
-                surveyTab.appendChild(thankyou);
-                surveyTab.classList.add('active');
-                document.getElementById('back-to-qrcode').addEventListener('click', function() {
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    document.querySelector('.tab[data-tab="qrcode"]').classList.add('active');
+                if (validateForm()) {
+                    saveSurveyData();
+                    
+                    // 显示感谢信息
                     document.querySelectorAll('.tab-content').forEach(content => {
                         content.classList.remove('active');
                     });
-                    document.getElementById('qrcode-tab').classList.add('active');
-                });
+                    
+                    const thankyou = document.createElement('div');
+                    thankyou.className = 'thank-you';
+                    thankyou.innerHTML = `
+                        <h2>感谢您参与本次问卷调查！</h2>
+                        <p>您的反馈对我们非常重要，我们将根据您的建议不断提升产品和服务质量。</p>
+                        <p>期待再次为您服务！</p>
+                        <div class="btn-container">
+                            <div class="btn" id="back-to-qrcode">返回首页</div>
+                        </div>
+                    `;
+                    
+                    const surveyTab = document.getElementById('survey-tab');
+                    surveyTab.innerHTML = '';
+                    surveyTab.appendChild(thankyou);
+                    surveyTab.classList.add('active');
+                    
+                    document.getElementById('back-to-qrcode').addEventListener('click', function() {
+                        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                        document.querySelector('.tab[data-tab="qrcode"]').classList.add('active');
+                        
+                        document.querySelectorAll('.tab-content').forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        document.getElementById('qrcode-tab').classList.add('active');
+                    });
+                }
             });
         });
+        
         // 生成二维码函数
         function generateQRCode() {
             const qrcodeElement = document.getElementById('qrcode');
             qrcodeElement.innerHTML = ''; // 清空原有内容
+            
             // 创建canvas元素用于生成二维码
             const canvas = document.createElement('canvas');
+            
             // 获取当前页面URL（去除hash部分）
             const url = window.location.href.split('#')[0] + '#survey';
+            
             // 使用QRCode库生成二维码
-            QRCode.toCanvas(canvas, url, {
-                width: 200,
-                margin: 1,
-                color: {
-                    dark: '#d32f2f',
-                    light: '#ffffff'
-                }
-            }, function(error) {
-                if (error) {
-                    console.error('生成二维码失败:', error);
-                    qrcodeElement.innerHTML = '<p>二维码生成失败，请刷新页面重试</p>';
-                } else {
-                    qrcodeElement.appendChild(canvas);
-                }
+            try {
+                QRCode.toCanvas(canvas, url, {
+                    width: 200,
+                    margin: 1,
+                    color: {
+                        dark: '#d32f2f',
+                        light: '#ffffff'
+                    }
+                }, function(error) {
+                    if (error) {
+                        console.error('生成二维码失败:', error);
+                        qrcodeElement.innerHTML = '<p>二维码生成失败，请刷新页面重试</p>';
+                    } else {
+                        qrcodeElement.appendChild(canvas);
+                    }
+                });
+            } catch (error) {
+                console.error('生成二维码异常:', error);
+                qrcodeElement.innerHTML = '<p>二维码生成异常，请确保网络连接正常</p>';
+            }
+        }
+        
+        // 更新可排序列表
+        function updateSortableList(listId, value) {
+            const list = document.getElementById(listId);
+            const existingItem = Array.from(list.children).find(item => item.textContent === value);
+            
+            if (!existingItem) {
+                const li = document.createElement('li');
+                li.textContent = value;
+                li.setAttribute('data-value', value);
+                list.appendChild(li);
+            }
+            
+            // 使列表可排序
+            makeSortable(list);
+        }
+        
+        // 从排序列表中移除项目
+        function removeFromSortableList(listId, value) {
+            const list = document.getElementById(listId);
+            const itemToRemove = Array.from(list.children).find(item => item.textContent === value);
+            
+            if (itemToRemove) {
+                list.removeChild(itemToRemove);
+            }
+        }
+        
+        // 使列表可排序
+        function makeSortable(list) {
+            let draggedItem = null;
+            
+            list.querySelectorAll('li').forEach(item => {
+                item.setAttribute('draggable', true);
+                
+                item.addEventListener('dragstart', function() {
+                    draggedItem = this;
+                    setTimeout(() => this.style.opacity = '0.5', 0);
+                });
+                
+                item.addEventListener('dragend', function() {
+                    setTimeout(() => this.style.opacity = '1', 0);
+                    draggedItem = null;
+                });
+                
+                item.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                });
+                
+                item.addEventListener('dragenter', function(e) {
+                    e.preventDefault();
+                    this.style.backgroundColor = '#e0e0e0';
+                });
+                
+                item.addEventListener('dragleave', function() {
+                    this.style.backgroundColor = '#f1f1f5';
+                });
+                
+                item.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    if (draggedItem !== this) {
+                        list.insertBefore(draggedItem, this.nextSibling);
+                    }
+                    this.style.backgroundColor = '#f1f1f5';
+                });
             });
         }
+        
+        // 验证表单
+        function validateForm() {
+            // 简单的必填字段验证
+            const requiredFields = [
+                { selector: '.form-section:first-child .option.selected', message: '请选择性别' },
+                { selector: '.form-section:first-child .question:nth-child(2) .option.selected', message: '请选择年龄段' }
+            ];
+            
+            for (const field of requiredFields) {
+                if (!document.querySelector(field.selector)) {
+                    alert(field.message);
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+        
         // 保存调查数据
         function saveSurveyData() {
             // 收集表单数据
@@ -664,6 +963,207 @@
                 occupation: document.querySelectorAll('.form-section:first-child .question')[2]?.querySelector('.option.selected')?.getAttribute('data-value') || '',
                 occupationOther: document.getElementById('occupation-other').value || '',
                 foodExpense: document.querySelectorAll('.form-section:first-child .question')[3]?.querySelector('.option.selected')?.getAttribute('data-value') || '',
+                
                 // 消费习惯
-                frequency: document.querySelectorAll('.form-section')[1]?.querySelector('.question:first-child .option.
-
+                frequency: document.querySelectorAll('.form-section')[1]?.querySelector('.question:first-child .option.selected')?.getAttribute('data-value') || '',
+                purchasePlaces: Array.from(document.querySelectorAll('input[name="purchase-place"]:checked')).map(cb => cb.value),
+                purchasePlaceOther: document.getElementById('purchase-place-other').value || '',
+                purpose: document.querySelectorAll('.form-section')[1]?.querySelectorAll('.question')[2]?.querySelector('.option.selected')?.getAttribute('data-value') || '',
+                purposeOther: document.getElementById('purpose-other').value || '',
+                averageConsumption: document.querySelectorAll('.form-section')[1]?.querySelectorAll('.question')[3]?.querySelector('.option.selected')?.getAttribute('data-value') || '',
+                preferredTypes: Array.from(document.querySelectorAll('input[name="preferred-type"]:checked')).map(cb => cb.value),
+                preferredTypeOther: document.getElementById('preferred-type-other').value || '',
+                
+                // 口味偏好
+                flavors: Array.from(document.querySelectorAll('input[name="flavor"]:checked')).map(cb => cb.value),
+                flavorOther: document.getElementById('flavor-other').value || '',
+                flavorRanking: Array.from(document.getElementById('flavor-sortable').children).map(li => li.getAttribute('data-value')),
+                spicyLevel: document.querySelectorAll('.form-section')[2]?.querySelectorAll('.question')[2]?.querySelector('.option.selected')?.getAttribute('data-value') || '',
+                saltPreference: document.querySelectorAll('.form-section')[2]?.querySelectorAll('.question')[3]?.querySelector('.option.selected')?.getAttribute('data-value') || '',
+                factors: Array.from(document.querySelectorAll('input[name="factor"]:checked')).map(cb => cb.value),
+                factorRanking: Array.from(document.getElementById('factor-sortable').children).map(li => li.getAttribute('data-value')),
+                
+                // 改进建议
+                traits: Array.from(document.querySelectorAll('input[name="trait"]:checked')).map(cb => cb.value),
+                traitOther: document.getElementById('trait-other').value || '',
+                improvements: Array.from(document.querySelectorAll('input[name="improvement"]:checked')).map(cb => cb.value),
+                improvementOther: document.getElementById('improvement-other').value || '',
+                participate: document.querySelectorAll('.form-section')[3]?.querySelectorAll('.question')[1]?.querySelector('.option.selected')?.getAttribute('data-value') || '',
+                contactInfo: document.getElementById('contact-info').value || '',
+                
+                // 开放性问题
+                favoriteProduct: document.getElementById('favorite-product').value || '',
+                memorableExperience: document.getElementById('memorable-experience').value || '',
+                innovativeProduct: document.getElementById('innovative-product').value || ''
+            };
+            
+            // 获取现有数据或初始化空数组
+            let surveyData = JSON.parse(localStorage.getItem('surveyData')) || [];
+            
+            // 添加新数据
+            surveyData.push(formData);
+            
+            // 保存回本地存储
+            localStorage.setItem('surveyData', JSON.stringify(surveyData));
+        }
+        
+        // 加载结果
+        function loadResults() {
+            const surveyData = JSON.parse(localStorage.getItem('surveyData')) || [];
+            
+            if (surveyData.length === 0) {
+                document.getElementById('results-tab').innerHTML = `
+                    <h2>问卷调查结果统计</h2>
+                    <p>暂无数据，请先收集一些问卷数据</p>
+                `;
+                return;
+            }
+            
+            // 生成统计图表
+            generateCharts(surveyData);
+            
+            // 生成数据表格
+            let tableHTML = '<table style="width: 100%; border-collapse: collapse; margin-top: 20px;">';
+            tableHTML += '<tr><th style="border: 1px solid #ddd; padding: 8px;">时间</th><th style="border: 1px solid #ddd; padding: 8px;">性别</th><th style="border: 1px solid #ddd; padding: 8px;">年龄段</th><th style="border: 1px solid #ddd; padding: 8px;">购买频率</th></tr>';
+            
+            surveyData.forEach(data => {
+                tableHTML += `<tr>
+                    <td style="border: 1px solid #ddd; padding: 8px;">${new Date(data.timestamp).toLocaleString()}</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">${data.gender}</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">${data.age}</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">${data.frequency}</td>
+                </tr>`;
+            });
+            
+            tableHTML += '</table>';
+            document.getElementById('data-table').innerHTML = tableHTML;
+        }
+        
+        // 生成统计图表
+        function generateCharts(data) {
+            // 性别分布
+            const genderCounts = { '男': 0, '女': 0 };
+            data.forEach(item => {
+                if (item.gender in genderCounts) {
+                    genderCounts[item.gender]++;
+                }
+            });
+            
+            new Chart(document.getElementById('gender-chart'), {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(genderCounts),
+                    datasets: [{
+                        data: Object.values(genderCounts),
+                        backgroundColor: ['#36a2eb', '#ff6384']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '性别分布'
+                        }
+                    }
+                }
+            });
+            
+            // 年龄段分布
+            const ageGroups = ['18岁以下', '18-30岁', '31-40岁', '41-50岁', '51岁以上'];
+            const ageCounts = Array(ageGroups.length).fill(0);
+            
+            data.forEach(item => {
+                const index = ageGroups.indexOf(item.age);
+                if (index !== -1) {
+                    ageCounts[index]++;
+                }
+            });
+            
+            new Chart(document.getElementById('age-chart'), {
+                type: 'bar',
+                data: {
+                    labels: ageGroups,
+                    datasets: [{
+                        label: '人数',
+                        data: ageCounts,
+                        backgroundColor: '#4bc0c0'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '年龄段分布'
+                        }
+                    }
+                }
+            });
+            
+            // 购买频率
+            const frequencies = ['每天', '每周2-3次', '每周1次', '每月数次', '很少购买'];
+            const frequencyCounts = Array(frequencies.length).fill(0);
+            
+            data.forEach(item => {
+                const index = frequencies.indexOf(item.frequency);
+                if (index !== -1) {
+                    frequencyCounts[index]++;
+                }
+            });
+            
+            new Chart(document.getElementById('frequency-chart'), {
+                type: 'bar',
+                data: {
+                    labels: frequencies,
+                    datasets: [{
+                        label: '人数',
+                        data: frequencyCounts,
+                        backgroundColor: '#ffcd56'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '购买频率分布'
+                        }
+                    }
+                }
+            });
+            
+            // 辣度接受程度
+            const spicyLevels = ['不辣', '微辣', '中辣', '特辣'];
+            const spicyLevelCounts = Array(spicyLevels.length).fill(0);
+            
+            data.forEach(item => {
+                const index = spicyLevels.indexOf(item.spicyLevel);
+                if (index !== -1) {
+                    spicyLevelCounts[index]++;
+                }
+            });
+            
+            new Chart(document.getElementById('spicy-level-chart'), {
+                type: 'doughnut',
+                data: {
+                    labels: spicyLevels,
+                    datasets: [{
+                        data: spicyLevelCounts,
+                        backgroundColor: ['#9966ff', '#ff9f40', '#ff6384', '#c9cbcf']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '辣度接受程度'
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
